@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t shiva/docker-react -f frontend/Dockerfile.dev .
+  - docker build -t shiva/docker-react -f frontend/Dockerfile.dev frontend
 
 script:
   - docker run -e CI=true shiva/docker-react npm run test
