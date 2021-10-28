@@ -14,10 +14,10 @@ deploy:
   provider: elasticbeanstalk
   region: 'us-east-2'
   edge: true
-  app: 'Docker'
-  env: 'Docker-env'
+  app: 'shiva_docker'
+  env: 'shivadocker-env'
   bucket_name: 'elasticbeanstalk-us-east-2-183826604270'
-  bucket_path: 'Docker'
+  bucket_path: 'shiva_docker'
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
